@@ -7,30 +7,19 @@
     <link rel="stylesheet" href="css/valentine.css" />
 </head>
 <body>
-<div id="valentineQuestion"><b>Will you be my valentine?</b></div>
-<button class="answerButton" onclick="location.href='thankyou.html'">
-    Yes
-</button>
-<button class="answerButton" id="noButton">I no no wanna o(╥﹏╥)o</button>
+<div id="valentineQuestion"><b>!!WELCOME!!</b></div>
+<div id="valentineQuestion"><b>!!Let's get started!!</b></div>
+
 <br />
 <audio autoplay loop>
     <source src="LeeHiONLY.mp3" type="audio/mpeg" >
     Your browser does not support the audio element.
 </audio>
-<video autoplay muted loop src="WIN_20230412_14_47_50_Pro.mp4" height="270px" width="480px" alt="cat asking question" class="responsive">
+<!--<video autoplay muted loop src="WIN_20230412_14_47_50_Pro.mp4" height="270px" width="480px" type="Video/mp4">-->
 
-<script>
-    document
-        .getElementById("noButton")
-        .addEventListener("click", function () {
-            var yesButton = document.querySelector(
-                'button[onclick*="thankyou.html"]'
-            );
-            var currentFontSize = parseInt(
-                window.getComputedStyle(yesButton).fontSize
-            );
-            yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
-        });
-</script>
+<button class="button" onclick="location.href='thankyou.html'">
+    Click me heheehe...
+</button>
+
 </body>
 </html>

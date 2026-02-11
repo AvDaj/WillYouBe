@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/lastpage.css" />
 </head>
 <body>
-<div id="thankyou"><b>Thank you</b></div>
+<div id="thankyou"><b>Chong, Will You Be My Valentine?❤️</b></div>
 
 <video height="270px" width="480px"autoplay loop muted>
     <source src="WIN_20230412_14_47_50_Pro.mp4" type="Video/mp4">
@@ -15,14 +15,29 @@
 
 <br />
 
-<audio controls autoplay loop>
+<audio autoplay loop>
     <source src="LeeHiONLY.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
 </audio>
 
 <h1>Don't go yet!</h1>
-<button class="button" onclick="location.href='date.html'">
-    Click me heheehe...
+<button class="answerButton" onclick="location.href='date.html'">
+    Yes
 </button>
+<button class="answerButton" id="noButton">I no no wanna o(╥﹏╥)o</button>
+<script>
+    document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+            var yesButton = document.querySelector(
+                'button[onclick*="thankyou.html"]'
+            );
+            var currentFontSize = parseInt(
+                window.getComputedStyle(yesButton).fontSize
+            );
+            yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
+        });
+</script>
+
 </body>
 </html>
