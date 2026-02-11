@@ -4,6 +4,10 @@ body {
     font-family: "Courier";
     background-color: #fff5e4;
     color: #ff9494;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #thankyou {
     font-size: 50px;
@@ -12,7 +16,7 @@ body {
 .rizz {
     margin-bottom: 10 px;
 }
-.button {
+.answerButton {
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
@@ -27,7 +31,7 @@ body {
     transition: 0.3s;
 }
 
-.button:hover {
+.answerButton:hover {
     background-color: #ff9494;
     color: #ffe3e1;
     border: 2px solid #ff9494;
